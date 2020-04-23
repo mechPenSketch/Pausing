@@ -1,0 +1,83 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://pause_assets/PauseBg.gd" type="Script" id=1]
+[ext_resource path="res://pause_assets/MenuPanel.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.67451 )
+
+[sub_resource type="Theme" id=2]
+Label/colors/font_color = Color( 1, 1, 1, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/font = null
+Label/styles/normal = null
+Panel/styles/panel = SubResource( 1 )
+
+[node name="PauseBg" type="Panel"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+np_panels = [ NodePath("CenterContainer/PanelContainer") ]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainPanel" type="PanelContainer" parent="CenterContainer"]
+margin_left = 465.0
+margin_top = 257.0
+margin_right = 558.0
+margin_bottom = 343.0
+script = ExtResource( 2 )
+np_first_to_focus = NodePath("MarginContainer/VBoxContainer/BtnCont")
+button_effects = {
+NodePath("MarginContainer/VBoxContainer/BtnCont"): "_continue_game",
+NodePath("MarginContainer/VBoxContainer/BtnQuit"): null
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/MainPanel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 86.0
+margin_bottom = 79.0
+custom_constants/margin_right = 5
+custom_constants/margin_top = 5
+custom_constants/margin_left = 5
+custom_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MainPanel/MarginContainer"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 74.0
+margin_bottom = 67.0
+
+[node name="Title" type="Label" parent="CenterContainer/MainPanel/MarginContainer/VBoxContainer"]
+margin_right = 69.0
+margin_bottom = 14.0
+text = "Header"
+align = 1
+
+[node name="BtnCont" type="Button" parent="CenterContainer/MainPanel/MarginContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 69.0
+margin_bottom = 38.0
+text = "Continue"
+
+[node name="BtnQuit" type="Button" parent="CenterContainer/MainPanel/MarginContainer/VBoxContainer"]
+margin_top = 42.0
+margin_right = 69.0
+margin_bottom = 62.0
+text = "Quit"

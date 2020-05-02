@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://pause_assets/PauseBg.gd" type="Script" id=1]
 [ext_resource path="res://pause_assets/MenuPanel.gd" type="Script" id=2]
 [ext_resource path="res://pause_assets/fonts/calibri.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://pause_assets/fonts/calibrib.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://pause_assets/ShortcutCancelRes.tres" type="ShortCut" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 1, 1, 1, 0 )
@@ -158,6 +159,7 @@ align = 1
 margin_top = 30.0
 margin_right = 62.0
 margin_bottom = 50.0
+shortcut = ExtResource( 5 )
 text = "Continue"
 
 [node name="BtnQuit" type="Button" parent="CenterContainer/MainPanel/MarginContainer/VBoxContainer"]
@@ -217,4 +219,5 @@ text = "Yes"
 margin_left = 60.0
 margin_right = 82.0
 margin_bottom = 20.0
+shortcut = ExtResource( 5 )
 text = "No"

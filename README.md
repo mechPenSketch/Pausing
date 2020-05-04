@@ -65,4 +65,4 @@ Finalize the layout of the menu panels before adding their buttons and their eff
 * mechPenSketch
 
 ## License
-(to be added)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

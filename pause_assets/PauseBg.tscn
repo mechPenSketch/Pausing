@@ -2,8 +2,8 @@
 
 [ext_resource path="res://pause_assets/PauseBg.gd" type="Script" id=1]
 [ext_resource path="res://pause_assets/MenuPanel.gd" type="Script" id=2]
-[ext_resource path="res://pause_assets/fonts/calibri.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://pause_assets/fonts/calibrib.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://pause_assets/fonts/Carlito-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://pause_assets/fonts/Carlito-Regular.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://pause_assets/ShortcutCancelRes.tres" type="ShortCut" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -56,7 +56,7 @@ expand_margin_bottom = 3.0
 
 [sub_resource type="DynamicFont" id=5]
 size = 20
-font_data = ExtResource( 4 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 0, 0, 0, 0.67451 )
@@ -74,7 +74,7 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [sub_resource type="DynamicFont" id=8]
-font_data = ExtResource( 3 )
+font_data = ExtResource( 4 )
 
 [sub_resource type="Theme" id=9]
 default_font = SubResource( 8 )

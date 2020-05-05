@@ -66,3 +66,6 @@ Finalize the layout of the menu panels before adding their buttons and their eff
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Acknowledgement
+* Font used as a placeholder is [Carlito](https://fontlibrary.org/en/font/carlito).

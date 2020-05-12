@@ -25,7 +25,7 @@ Using the Control Node ColorRect sounds ideals as its color can be directly set 
 #### PauseRes.tres
 This resource file handles the style of the whole pausing system.
 
-When it comes to Styles for Buttons, Focus should be left blank while Hover should have a stylebox, as the latter is the one that will be used when a button gets focused.
+When it comes to Styles for Buttons, Focus should contain StyleBoxEmpty (if left blank, the focused button will be outlined in blue) while Hover should have a stylebox, as the latter is the one that will be used when a button gets focused.
 
 #### MenuPanel.gd
 MenuPanel lists the buttons it has, connecting them to its parent PauseBg when it comes to pressing. This is done through a Dictionary, `button_effects`.
